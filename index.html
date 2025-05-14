@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SA Tour</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1> Explore South Africa</h1>
+
+  <div class="tabs">
+    <button class="tab" data-target="gauteng">Gauteng</button>
+    <button class="tab" data-target="cape town">Cape town</button>
+    <button class="tab" data-target="gqeberha">Gqeberha</button>
+  </div>
+
+  <div class="content">
+    <div id="gauteng" class="tab-content hidden">
+      <img src="C:\Users\katle\Desktop\SE\HTML\W6\images\JHB.jpg" alt="Gauteng"/>
+      <p>Welcome to the city of Gold.</p>
+    </div>
+    <div id="cape town" class="tab-content hidden">
+      <img src="C:\Users\katle\Desktop\SE\HTML\W6\images\CPT.jpg" alt="Cape Town"/>
+      <p>Ekse, this is Kaap Staad.</p>
+    </div>
+    <div id="gqeberha" class="tab-content hidden">
+      <img src="C:\Users\katle\Desktop\SE\HTML\W6\images\PE.jpg" alt="Gqeberha"/>
+      <p>Uwamukelekile la Ebhayi.</p>
+    </div>
+  </div>
+
+  <button id="surpriseBtn"> Click Me!</button>
+
+  <form id="travelForm">
+    <h2>Book Your Trip</h2>
+    <label>Name: <input type="text" id="name" required placeholder="enter your name"/></label>
+    <span class="feedback" id="nameFeedback"></span>
+
+    <label>Email: <input type="email" id="email" required placeholder="example@gmail.com" /></label>
+    <span class="feedback" id="emailFeedback"></span>
+
+    <label>Password: <input type="password" id="password" required placeholder="enter your password"/></label>
+    <span class="feedback" id="passwordFeedback"></span>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Katlego. All rights reserved</p>
+  </footer>
+</body>
+</html>
